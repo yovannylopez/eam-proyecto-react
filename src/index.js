@@ -1,8 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './index.sass';
+
+import Router from './router';
+
 import * as serviceWorker from './serviceWorker';
+
+const App = () => {
+  return <Router />;
+};
+
+export default App;
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
